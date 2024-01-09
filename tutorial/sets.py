@@ -33,4 +33,27 @@ print(d)
 # issuperset():methods checks if all the items of a particular set is prsent in the original set
 s=cities1.issuperset(cities2)
 print(s)
-# .
+# issubset():checks if all the items of the original list are present in the particular set.it returns true if all the items are present,else it returns false
+m=cities1.issubset(cities)
+print(m)
+
+# add
+cities.add("helsinkki")
+print(cities)
+
+# remove/discard
+cities1.remove("tokyo")
+print(cities)
+# the main differenec between remove and discard is that if you try to remove an item which is not present in the set.remove raises and error ,but discard doesnot raise any error 
+ 
+
+# pop
+out=["hello","hi","hey"]
+item=out.pop()
+print(item)
+print(out)
+
+# delete():to delete the entire set
+# clear():clears all the items of the set and prints an empty set
+out.clear()
+print(out)
