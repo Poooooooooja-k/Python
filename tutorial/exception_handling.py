@@ -18,11 +18,17 @@
 #     print("index error")
 
 # finally:also part of exception handling.this block is always executed
-try:
-    l=[1,5,6,7]
-    i=int(input("enter the index"))
-    print(l[i])
-except:
-    print("some error occured")
-finally:
-    print("i am always exceuted")
+# try:
+#     l=[1,5,6,7]
+#     i=int(input("enter the index"))
+#     print(l[i])
+# except:
+#     print("some error occured")
+# finally:
+#     print("i am always exceuted")
+
+
+# customerror:we can raise custom error by uisng the raise keyword
+a=int(input("enter any value between 5 and 9: "))
+if (a<5 or a>9):
+    raise ValueError("value should be between 5 ans 9")
